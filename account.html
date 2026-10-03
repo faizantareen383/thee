@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Account | The Resin Art Club</title>
+    <meta name="description" content="Customer account dashboard for The Resin Art Club." />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body data-page="account">
+    <div id="header"></div>
+
+    <main class="page-hero inner">
+      <div class="container">
+        <div class="breadcrumbs"><a href="index.html">Home</a> / <span>Account</span></div>
+        <div class="section-heading">
+          <div class="eyebrow">My Account</div>
+          <h1>Welcome back</h1>
+        </div>
+        <div class="account-layout">
+          <aside class="side-nav">
+            <a href="account.html" class="active">Profile</a>
+            <a href="orders.html">Orders</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="shop.html">Browse Shop</a>
+            <a href="login.html" id="logout-btn">Logout</a>
+          </aside>
+          <div class="profile-panel">
+            <div class="section-heading">
+              <h2 id="customer-name">Customer</h2>
+              <p id="customer-email">customer@example.com</p>
+            </div>
+            <div id="account-summary"></div>
+            <div class="section" style="padding-top: 30px;">
+              <h3>Recent Orders</h3>
+              <div id="customer-orders" class="tabs-grid"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="footer"></div>
+    <div id="toast-container"></div>
+
+    <script src="main.js"></script>
+    <script src="auth.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | The Resin Art Club</title>
+    <meta name="description" content="Create a demo customer account with The Resin Art Club." />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body data-page="register">
+    <div class="auth-shell">
+      <div class="auth-card">
+        <div class="section-heading">
+          <div class="eyebrow">Join us</div>
+          <h2>Create an account</h2>
+        </div>
+        <div class="warning-box">This is a demo auth flow using localStorage and not production-secure.</div>
+        <form id="register-form">
+          <div class="form-grid">
+            <div class="form-row full"><label for="register-name">Full Name</label><input id="register-name" class="form-field" required /></div>
+            <div class="form-row"><label for="register-email">Email</label><input id="register-email" type="email" class="form-field" required /></div>
+            <div class="form-row"><label for="register-phone">Phone</label><input id="register-phone" class="form-field" required /></div>
+            <div class="form-row"><label for="register-password">Password</label><input id="register-password" type="password" class="form-field" required /></div>
+            <div class="form-row"><label for="register-confirm">Confirm Password</label><input id="register-confirm" type="password" class="form-field" required /></div>
+          </div>
+          <button class="btn btn-primary" type="submit" style="width:100%; margin-top:18px;">Register</button>
+        </form>
+        <p style="margin-top: 18px; text-align:center;">Already registered? <a href="login.html" style="color: var(--primary-dark); font-weight:700;">Login here</a></p>
+      </div>
+    </div>
+
+    <div id="toast-container"></div>
+
+    <script src="main.js"></script>
+    <script src="auth.js"></script>
+  </body>
+</html>
+

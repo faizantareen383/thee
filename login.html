@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | The Resin Art Club</title>
+    <meta name="description" content="Login to your customer account on The Resin Art Club demo storefront." />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body data-page="login">
+    <div class="auth-shell">
+      <div class="auth-card">
+        <div class="section-heading">
+          <div class="eyebrow">Welcome back</div>
+          <h2>Login to your account</h2>
+        </div>
+        <div class="warning-box">This authentication system is for frontend/demo purposes only and is not production-secure.</div>
+        <form id="login-form">
+          <div class="form-row">
+            <label for="login-email">Email</label>
+            <input id="login-email" class="form-field" type="email" required />
+          </div>
+          <div class="form-row">
+            <label for="login-password">Password</label>
+            <input id="login-password" class="form-field" type="password" required />
+          </div>
+          <button class="btn btn-primary" type="submit" style="width:100%;">Login</button>
+        </form>
+        <p style="margin-top: 18px; text-align:center;">No account yet? <a href="register.html" style="color: var(--primary-dark); font-weight:700;">Create one</a></p>
+      </div>
+    </div>
+
+    <div id="toast-container"></div>
+
+    <script src="main.js"></script>
+    <script src="auth.js"></script>
+  </body>
+</html>
+

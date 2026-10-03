@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop | The Resin Art Club</title>
+    <meta name="description" content="Shop handcrafted resin trays, coasters, jewelry, keychains, wall art, and custom gifts from The Resin Art Club." />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body data-page="shop">
+    <div id="header"></div>
+
+    <main class="page-hero inner">
+      <div class="container">
+        <div class="breadcrumbs"><a href="index.html">Home</a> / <span>Shop</span></div>
+        <div class="section-heading">
+          <div class="eyebrow">The Collection</div>
+          <h1>Shop handcrafted resin art</h1>
+        </div>
+        <div class="shop-layout">
+          <aside class="sidebar-panel">
+            <div class="filter-group">
+              <h4>Category</h4>
+              <select id="category-filter" class="select-field" style="width:100%;">
+                <option value="all">All Categories</option>
+                <option value="resin-trays">Resin Trays</option>
+                <option value="resin-coasters">Resin Coasters</option>
+                <option value="keychains">Keychains</option>
+                <option value="jewelry">Jewelry</option>
+                <option value="home-decor">Home Decor</option>
+                <option value="customized-gifts">Customized Gifts</option>
+                <option value="wall-art">Wall Art</option>
+                <option value="resin-clocks">Resin Clocks</option>
+                <option value="corporate-gifts">Corporate Gifts</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <h4>Price</h4>
+              <input id="max-price" type="range" min="500" max="6000" step="100" value="6000" style="width:100%;" />
+              <div class="range-row"><span>PKR 500</span><span id="price-range-label">PKR 6,000</span></div>
+            </div>
+            <div class="filter-group">
+              <h4>Rating</h4>
+              <select id="rating-filter" class="select-field" style="width:100%;">
+                <option value="0">Any rating</option>
+                <option value="4">4.0+ stars</option>
+                <option value="4.5">4.5+ stars</option>
+                <option value="4.8">4.8+ stars</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <h4>Type</h4>
+              <div class="checkbox-list">
+                <button type="button" class="btn btn-ghost" data-category-filter="all">All</button>
+                <button type="button" class="btn btn-ghost" data-category-filter="resin-trays">Resin Trays</button>
+                <button type="button" class="btn btn-ghost" data-category-filter="resin-coasters">Resin Coasters</button>
+                <button type="button" class="btn btn-ghost" data-category-filter="keychains">Keychains</button>
+                <button type="button" class="btn btn-ghost" data-category-filter="home-decor">Home Decor</button>
+              </div>
+            </div>
+          </aside>
+
+          <div>
+            <div class="shop-toolbar">
+              <div>
+                <h2>Curated pieces</h2>
+              </div>
+              <div class="toolbar-actions">
+                <select id="sort-products" class="select-field">
+                  <option value="newest">Sort: Newest</option>
+                  <option value="low-high">Price: Low to High</option>
+                  <option value="high-low">Price: High to Low</option>
+                  <option value="rating">Rating</option>
+                </select>
+                <select id="product-status" class="select-field">
+                  <option value="all">All products</option>
+                  <option value="sale">Sale</option>
+                  <option value="bestseller">Best sellers</option>
+                  <option value="featured">Featured</option>
+                </select>
+              </div>
+            </div>
+            <div id="shop-product-grid" class="products-grid"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="footer"></div>
+    <div id="toast-container"></div>
+
+    <script src="main.js"></script>
+    <script src="products.js"></script>
+  </body>
+</html>
+

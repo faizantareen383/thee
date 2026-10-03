@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Order | The Resin Art Club</title>
+    <meta name="description" content="Request a one-of-a-kind custom resin piece from The Resin Art Club." />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body data-page="custom-order">
+    <div id="header"></div>
+
+    <main class="page-hero inner">
+      <div class="container">
+        <div class="breadcrumbs"><a href="index.html">Home</a> / <span>Custom Order</span></div>
+        <div class="section-heading">
+          <div class="eyebrow">Bespoke Art</div>
+          <h1>Custom order request</h1>
+        </div>
+        <div class="profile-panel">
+          <form id="custom-order-form" class="form-grid">
+            <div class="form-row"><label>Full Name</label><input id="custom-name" class="form-field" required /></div>
+            <div class="form-row"><label>Phone</label><input id="custom-phone" class="form-field" required /></div>
+            <div class="form-row"><label>Email</label><input id="custom-email" type="email" class="form-field" required /></div>
+            <div class="form-row"><label>Product Type</label><select id="custom-product-type" class="form-field"><option>Resin Tray</option><option>Coaster Set</option><option>Wall Art</option><option>Jewelry</option><option>Keychain</option><option>Gift Set</option></select></div>
+            <div class="form-row"><label>Preferred Size</label><input id="custom-size" class="form-field" /></div>
+            <div class="form-row"><label>Preferred Colors</label><input id="custom-colors" class="form-field" /></div>
+            <div class="form-row full"><label>Custom Text / Name</label><input id="custom-text" class="form-field" /></div>
+            <div class="form-row full"><label>Description</label><textarea id="custom-description" class="form-field" rows="5"></textarea></div>
+            <div class="form-row"><label>Budget Range</label><select id="custom-budget" class="form-field"><option>PKR 2,000 - 5,000</option><option>PKR 5,000 - 10,000</option><option>PKR 10,000 - 20,000</option><option>Above PKR 20,000</option></select></div>
+            <div class="form-row"><label>Reference Image URL</label><input id="custom-reference" class="form-field" placeholder="Optional" /></div>
+            <div class="form-row full"><button class="btn btn-primary" type="submit">Submit Custom Request</button></div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <div id="footer"></div>
+    <div id="toast-container"></div>
+
+    <script src="main.js"></script>
+    <script src="forms.js"></script>
+  </body>
+</html>
+

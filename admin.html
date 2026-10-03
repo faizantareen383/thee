@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel | The Resin Art Club</title>
+    <meta name="description" content="Admin dashboard for The Resin Art Club storefront and order management." />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body data-page="admin" data-section="dashboard">
+    <div id="admin-shell" class="admin-shell" style="display:none;">
+      <div class="admin-layout">
+        <aside class="admin-sidebar">
+          <div class="logo" style="display:flex; align-items:center; gap:12px; color:#fff;">
+            <span class="logo-mark" style="width:38px; height:38px; border-radius:12px; display:grid; place-items:center; background:linear-gradient(135deg, #f4dfc4, #b36b52); color:#2d1f1b;">âœ¦</span>
+            <div>
+              <strong>The Resin Art Club</strong><br>
+              <small style="color:rgba(255,255,255,0.7);">Admin Panel</small>
+            </div>
+          </div>
+          <nav class="admin-menu" aria-label="Admin navigation">
+            <a href="#" data-admin-section="dashboard" class="active"><i class="fa-solid fa-chart-pie"></i> Dashboard</a>
+            <a href="#" data-admin-section="products"><i class="fa-solid fa-box"></i> Products</a>
+            <a href="#" data-admin-section="categories"><i class="fa-solid fa-tags"></i> Categories</a>
+            <a href="#" data-admin-section="orders"><i class="fa-solid fa-clipboard-list"></i> Orders</a>
+            <a href="#" data-admin-section="customers"><i class="fa-solid fa-users"></i> Customers</a>
+            <a href="#" data-admin-section="reviews"><i class="fa-solid fa-star"></i> Reviews</a>
+            <a href="#" data-admin-section="coupons"><i class="fa-solid fa-ticket"></i> Coupons</a>
+            <a href="#" data-admin-section="inventory"><i class="fa-solid fa-boxes-stacked"></i> Inventory</a>
+            <a href="#" data-admin-section="custom-orders"><i class="fa-solid fa-clipboard-question"></i> Custom Orders</a>
+            <a href="#" data-admin-section="messages"><i class="fa-solid fa-message"></i> Messages</a>
+            <a href="#" data-admin-section="newsletter"><i class="fa-solid fa-envelope-open-text"></i> Newsletter</a>
+            <a href="#" data-admin-section="settings"><i class="fa-solid fa-gear"></i> Settings</a>
+            <a href="#" id="logout-admin"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+          </nav>
+        </aside>
+        <main class="admin-main">
+          <div class="admin-topbar">
+            <div>
+              <div class="eyebrow">Operations</div>
+              <h1>Dashboard Overview</h1>
+            </div>
+            <div class="account-chip"><i class="fa-regular fa-user"></i> Admin</div>
+          </div>
+          <div id="admin-content"></div>
+        </main>
+      </div>
+    </div>
+
+    <div id="admin-login-box" class="admin-login-screen" style="display:none;">
+      <div class="admin-login-card">
+        <div class="eyebrow">Admin Access</div>
+        <h2>Login to dashboard</h2>
+        <div class="warning-box">This frontend-only admin authentication is not secure for production use.</div>
+        <form id="admin-login-form" style="margin-top:18px;">
+          <div class="form-row">
+            <label>Email</label>
+            <input id="admin-email" class="form-field" type="email" value="admin@theresinartclub.com" required />
+          </div>
+          <div class="form-row">
+            <label>Password</label>
+            <input id="admin-password" class="form-field" type="password" value="admin123" required />
+          </div>
+          <button class="btn btn-primary" type="submit" style="width:100%;">Login</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="toast-container"></div>
+
+    <script src="main.js"></script>
+    <script src="admin.js"></script>
+  </body>
+</html>
+

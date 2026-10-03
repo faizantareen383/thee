@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | The Resin Art Club</title>
+    <meta name="description" content="Contact The Resin Art Club for custom orders, questions, or support." />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body data-page="contact">
+    <div id="header"></div>
+
+    <main class="page-hero inner">
+      <div class="container">
+        <div class="breadcrumbs"><a href="index.html">Home</a> / <span>Contact</span></div>
+        <div class="section-heading">
+          <div class="eyebrow">Get in touch</div>
+          <h1>We would love to hear from you</h1>
+        </div>
+        <div class="product-detail">
+          <div class="detail-info">
+            <h3>Contact details</h3>
+            <p><strong>Phone:</strong> +92 300 1234567</p>
+            <p><strong>Email:</strong> hello@theresinartclub.com</p>
+            <p><strong>Address:</strong> Lahore, Pakistan</p>
+            <p><strong>Instagram:</strong> @theresinartclub</p>
+            <p><strong>Facebook:</strong> The Resin Art Club</p>
+            <p><strong>TikTok:</strong> @theresinartclub</p>
+            <p><strong>WhatsApp:</strong> +92 300 1234567</p>
+          </div>
+          <div class="profile-panel">
+            <form id="contact-form" class="form-grid">
+              <div class="form-row"><label>Name</label><input id="contact-name" class="form-field" required /></div>
+              <div class="form-row"><label>Email</label><input id="contact-email" type="email" class="form-field" required /></div>
+              <div class="form-row"><label>Phone</label><input id="contact-phone" class="form-field" required /></div>
+              <div class="form-row full"><label>Message</label><textarea id="contact-message" class="form-field" rows="5" required></textarea></div>
+              <div class="form-row full"><button class="btn btn-primary" type="submit">Send Message</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="footer"></div>
+    <div id="toast-container"></div>
+
+    <script src="main.js"></script>
+    <script src="forms.js"></script>
+  </body>
+</html>
+
